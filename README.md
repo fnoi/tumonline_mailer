@@ -2,10 +2,10 @@
 
 instructions:
 
-use windows, have outlook open I guess
+1. use windows, have outlook open I guess
 
 
-python csv_mailer.py /path/to/recipients.csv /path/to/content.txt
+2. python csv_mailer.py /path/to/recipients.csv /path/to/content.txt
 
 
 <i>recipients.csv: standard tumonline export</i>
