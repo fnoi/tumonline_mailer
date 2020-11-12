@@ -1,5 +1,7 @@
 # tumonline_mailer
 
+mails all students on the list, except for empy LV and Fixplatz students
+
 instructions:
 
 1. use windows, have outlook open I guess
