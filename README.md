@@ -2,6 +2,10 @@
 
 instructions:
 
-python csv_mailer.py "<"tumonline-exported csv file">"
 
-confirm if called
+python csv_mailer.py /path/to/recipients.csv /path/to/content.txt
+
+
+<i>recipients.csv: standard tumonline export</i>
+
+<i>content.txt: string only, no salutation needed</i>
