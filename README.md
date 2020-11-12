@@ -11,3 +11,7 @@ instructions:
 <i>recipients.csv: standard tumonline export</i>
 
 <i>content.txt: string only, salutation will be added automatically</i>
+
+dummy run:
+
+<b>python csv_mailer.py .\csv_test.csv .\txt_test.txt</b>
