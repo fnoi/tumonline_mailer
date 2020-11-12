@@ -2,6 +2,8 @@
 
 instructions:
 
+use windows, have outlook open I guess
+
 
 python csv_mailer.py /path/to/recipients.csv /path/to/content.txt
 
