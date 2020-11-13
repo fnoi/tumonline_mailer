@@ -1,5 +1,5 @@
 ﻿NACHNAME;VORNAME;TITEL;MATRIKELNUMMER;GESCHLECHT;EMAIL;STUDIUM_ID;STUDIUM;FACHSEMESTER;KONTEXT;LV_NUMMER;LV_TITEL;SPO_KONTEXT_KENNUNG;SPO_KONTEXT_NAME;LV_GRUPPE;PRAEFERENZ;REIHUNGSKENNZAHL;STATUS;ANMERKUNG;ANGEMELDET_AM;ANGEMELDET_VON;STATUS_GEAENDERT_AM;STATUS_GEAENDERT_VON
-Heinzelmann;Manfred;Dr.-Ing.;584654354;M;ga25mal@mytum.de;xx;xx;xx;LV-Gruppe; 0000002243;Computergestützte Elefantologie 1;;;;;;;;;;Fixplatz;
-Heinzelfrau;Fraufred;Dr.rer.nat.;54484542;W;f.noichl@gmail.com;xx;xx;xx;Anmeldeverfahren; ;Computergestützte Elefantologie 2;;;;;;;;;;;
-Heinzelmän;Manfred;B.Sc.;none;;florian.noichl@tum.de;;;;LV-Gruppe;;Computergestützte Elefantologie 3;;;;;;;;;;;
-Felix;Eickeler;;;;felix.eickeler@tum.de;;;;;;Computergestützte Elefantologie 3;;;;;;;;;;;
+Heinzelmann;Manfred;Dr.-Ing.;;M;;xx;xx;xx;LV-Gruppe; 0000002243;Computergestützte Elefantologie 1;;;;;;;;;;Fixplatz;
+Heinzelfrau;Fraufred;Dr.rer.nat.;;W;;xx;xx;xx;Anmeldeverfahren; ;Computergestützte Elefantologie 2;;;;;;;;;;;
+Heinzelmän;Manfred;B.Sc.;;;;;;;LV-Gruppe;;Computergestützte Elefantologie 3;;;;;;;;;;;
+Huber;Alfons;;;;;;;;;;Computergestützte Elefantologie 3;;;;;;;;;;;
