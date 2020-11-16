@@ -29,21 +29,36 @@ df_red = df[['VORNAME','NACHNAME','EMAIL','LV_TITEL','STATUS']].copy()
 text_file = open(txt)
 content = str(text_file.read())
 
+trigger = input('test (T) or execute (E)?')
+diff_string_e = 'sending to:'
+diff_string_t = 'would be sent to:'
+
 for i in range(len(df_red)):
     if pd.isna(df_red.at[i,'LV_TITEL']) == False and df_red.at[i,'STATUS'] != 'Fixplatz':
-        print(i, df_red.at[i,'VORNAME'])
+        #print(i, df_red.at[i,'VORNAME'])
 
-    recipient = df_red.at[i,'EMAIL']
-    firstname = df_red.at[i,'VORNAME']
-    lastname = df_red.at[i,'NACHNAME']
-    LV_name = df_red.at[i,'LV_TITEL']
+        recipient = df_red.at[i,'EMAIL']
+        firstname = df_red.at[i,'VORNAME']
+        lastname = df_red.at[i,'NACHNAME']
+        LV_name = df_red.at[i,'LV_TITEL']
 
-    mail = o.CreateItem(0)
-    mail.Recipients.Add(recipient)
-    mail.Subject = 'Your application for \"' + str(LV_name) +'\"'
-    mail.Bodyformat = 1
-    mail.Body = 'Dear ' + str(firstname) + ' ' + str(lastname) + ',' + content
+        mail = o.CreateItem(0)
+        mail.Recipients.Add(recipient)
+        mail.Subject = 'Your registration for \"' + str(LV_name) +'\"'
+        mail.Bodyformat = 1
+        mail.Body = 'Dear ' + str(firstname) + ' ' + str(lastname) + ',' + content
 
-    mail._oleobj_.Invoke(*(64209, 0, 8, 0, sender))
-    #mail.Display()
-    mail.Send()
+        mail._oleobj_.Invoke(*(64209, 0, 8, 0, sender))
+
+        #mail.Display() # to open current mail in outlook
+
+        if trigger == 'E' or trigger == 'e':
+            string_act = diff_string_e
+            mail.Send()
+        elif trigger == 'T' or trigger == 't':
+            string_act = diff_string_t
+        else:
+            print('wrong answer, bye')
+            exit()
+
+        print(string_act, firstname, lastname, '(', recipient, ')', 'for: ', LV_name)
